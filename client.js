@@ -10,7 +10,8 @@ const connect = () => {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("-connected-")
+    console.log("-connected to snek game server-")
+    conn.write("Name: CAE")
   });
 
   conn.on("data", (data) => {
