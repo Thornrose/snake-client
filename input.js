@@ -35,6 +35,12 @@ const handleUserInput = (key) => {  // could also have (key) and then if (key ==
   if (key === "s") {
     connection.write("Move: down");
   }
+  if (key === "1") {
+    connection.write("Say: hisss")
+  }
+  if (key === "3") {
+    connection.write("Say: yummm")
+  }
 
   if (key === `\u0003`){
     process.exit();
